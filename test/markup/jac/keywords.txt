@@ -1,0 +1,30 @@
+walker MyWalker {
+    can walk;
+}
+
+node Person {
+    has name: str;
+    has age: int;
+}
+
+edge Knows {
+    has since: int = 2020;
+}
+
+if True {
+    report "hello";
+}
+
+for i in range(10) {
+    visit [-->];
+}
+
+while False {
+    break;
+}
+
+try {
+    raise ValueError("oops");
+} except ValueError as e {
+    pass;
+}

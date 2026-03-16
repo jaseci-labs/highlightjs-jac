@@ -1,0 +1,30 @@
+<span class="hljs-keyword">node</span> <span class="hljs-title class_">Person</span> {
+    <span class="hljs-keyword">has</span> name: <span class="hljs-built_in">str</span>;
+    <span class="hljs-keyword">has</span> age: <span class="hljs-built_in">int</span>;
+}
+
+<span class="hljs-keyword">edge</span> <span class="hljs-title class_">Knows</span> {
+    <span class="hljs-keyword">has</span> since: <span class="hljs-built_in">int</span> = <span class="hljs-number">2020</span>;
+}
+
+<span class="hljs-keyword">walker</span> <span class="hljs-title class_">Traverser</span> {
+    <span class="hljs-keyword">can</span> travel <span class="hljs-keyword">with</span> `root <span class="hljs-keyword">entry</span> {
+        <span class="hljs-keyword">visit</span> [--&gt;];
+    }
+    <span class="hljs-keyword">can</span> <span class="hljs-title function_">travel</span> <span class="hljs-keyword">with</span> Person <span class="hljs-keyword">entry</span> {
+        <span class="hljs-keyword">report</span> here.name;
+        <span class="hljs-keyword">disengage</span>;
+    }
+}
+
+<span class="hljs-keyword">obj</span> <span class="hljs-title class_">Config</span> {
+    <span class="hljs-keyword">has</span> debug: <span class="hljs-built_in">bool</span> = <span class="hljs-literal">False</span>;
+    <span class="hljs-keyword">has</span> version: <span class="hljs-built_in">str</span> = <span class="hljs-string">&quot;1.0.0&quot;</span>;
+}
+
+<span class="hljs-keyword">enum</span> <span class="hljs-title class_">Color</span> {
+    RED = <span class="hljs-string">&quot;red&quot;</span>,
+    GREEN = <span class="hljs-string">&quot;green&quot;</span>,
+    BLUE = <span class="hljs-string">&quot;blue&quot;</span>
+}
+

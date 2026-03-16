@@ -1,0 +1,10 @@
+<span class="hljs-keyword">node</span> <span class="hljs-title class_">Counter</span> {
+    <span class="hljs-keyword">has</span> count: <span class="hljs-built_in">int</span> = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">has</span> ratio: <span class="hljs-built_in">float</span> = <span class="hljs-number">3.14</span>;
+    <span class="hljs-keyword">has</span> big: <span class="hljs-built_in">int</span> = <span class="hljs-number">1_000_000</span>;
+    <span class="hljs-keyword">has</span> hex_val: <span class="hljs-built_in">int</span> = <span class="hljs-number">0xFF</span>;
+    <span class="hljs-keyword">has</span> bin_val: <span class="hljs-built_in">int</span> = <span class="hljs-number">0b1010</span>;
+    <span class="hljs-keyword">has</span> oct_val: <span class="hljs-built_in">int</span> = <span class="hljs-number">0o17</span>;
+    <span class="hljs-keyword">has</span> sci: <span class="hljs-built_in">float</span> = <span class="hljs-number">1.5e10</span>;
+}
+

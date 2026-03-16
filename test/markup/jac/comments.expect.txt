@@ -1,0 +1,13 @@
+<span class="hljs-comment"># This is a single-line comment</span>
+
+<span class="hljs-comment">#* This is a
+   multi-line block comment *#</span>
+
+<span class="hljs-keyword">walker</span> <span class="hljs-title class_">Agent</span> {
+    <span class="hljs-comment"># inline comment</span>
+    <span class="hljs-keyword">can</span> run {
+        <span class="hljs-comment">#* block comment inside ability *#</span>
+        <span class="hljs-keyword">visit</span> [--&gt;];  <span class="hljs-comment"># traverse edges</span>
+    }
+}
+

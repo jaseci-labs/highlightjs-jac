@@ -1,0 +1,29 @@
+node Person {
+    has name: str;
+    has age: int;
+}
+
+edge Knows {
+    has since: int = 2020;
+}
+
+walker Traverser {
+    can travel with `root entry {
+        visit [-->];
+    }
+    can travel with Person entry {
+        report here.name;
+        disengage;
+    }
+}
+
+obj Config {
+    has debug: bool = False;
+    has version: str = "1.0.0";
+}
+
+enum Color {
+    RED = "red",
+    GREEN = "green",
+    BLUE = "blue"
+}
