@@ -1,0 +1,48 @@
+{
+  "name": "highlightjs-jac",
+  "version": "1.0.0",
+  "description": "Jac language grammar for highlight.js — syntax highlighting for the Jaseci Object-Spatial Programming language",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "src/languages/jac.js",
+    "dist/*.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaseci-labs/highlightjs-jac.git"
+  },
+  "keywords": [
+    "jac",
+    "jaclang",
+    "jaseci",
+    "hljs",
+    "highlightjs",
+    "highlight.js",
+    "syntax-highlighting",
+    "object-spatial-programming"
+  ],
+  "author": "Jaseci Labs",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jaseci-labs/highlightjs-jac/issues"
+  },
+  "homepage": "https://github.com/jaseci-labs/highlightjs-jac#readme",
+  "peerDependencies": {
+    "highlight.js": ">=11.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.2",
+    "highlight.js": "^11.11.1"
+  }
+}
