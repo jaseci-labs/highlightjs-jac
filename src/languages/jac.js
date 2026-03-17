@@ -15,28 +15,33 @@ export default function(hljs) {
 
   // ── Keywords ──────────────────────────────────────────────────────────────
 
-  // Archetype / declaration keywords
+  // Archetype / declaration keywords (storage.type.class.jac)
   const ARCHETYPE_KEYWORDS = [
     'class',
     'edge',
     'enum',
-    'impl',
     'node',
     'obj',
     'test',
     'walker'
   ];
 
-  // Ability / function keywords
+  // Ability / function keywords (storage.type.function.jac)
   const ABILITY_KEYWORDS = [
     'can',
-    'def'
+    'def',
+    'impl',
+    'sem'
   ];
 
-  // Access modifiers
+  // Access modifiers (storage.modifier.declaration.jac)
   const ACCESS_KEYWORDS = [
     'abs',
-    'abstract',
+    'cl',
+    'glob',
+    'global',
+    'let',
+    'nonlocal',
     'override',
     'priv',
     'protect',
@@ -44,70 +49,56 @@ export default function(hljs) {
     'static'
   ];
 
-  // Control-flow keywords
+  // Control-flow keywords (keyword.control.flow.jac) — includes async, OSP, and flow
   const CONTROL_KEYWORDS = [
     'as',
     'assert',
+    'async',
+    'await',
     'break',
+    'by',
     'case',
     'continue',
     'default',
     'del',
+    'disengage',
     'elif',
     'else',
+    'entry',
     'except',
+    'exit',
     'finally',
     'for',
+    'from',
     'if',
+    'ignore',
+    'lambda',
     'match',
     'pass',
     'raise',
+    'report',
     'return',
+    'spawn',
     'switch',
+    'to',
     'try',
+    'visit',
     'while',
     'with',
     'yield'
   ];
 
-  // Import keywords
+  // Import keywords (keyword.control.import.jac)
   const IMPORT_KEYWORDS = [
+    'as',
     'from',
     'import',
     'include'
   ];
 
-  // Async keywords
-  const ASYNC_KEYWORDS = [
-    'async',
-    'await'
-  ];
-
-  // Jac Object-Spatial Programming keywords
-  const OSP_KEYWORDS = [
-    'disengage',
-    'entry',
-    'exit',
-    'ignore',
-    'report',
-    'revisit',
-    'skip',
-    'spawn',
-    'visit'
-  ];
-
-  // Declarative / misc keywords
+  // Declarative / misc keywords (storage.type.has.jac)
   const MISC_KEYWORDS = [
-    'by',
-    'check',
-    'glob',
-    'global',
-    'has',
-    'lambda',
-    'let',
-    'nonlocal',
-    'sem',
-    'to'
+    'has'
   ];
 
   // Word-level operator keywords
@@ -125,8 +116,6 @@ export default function(hljs) {
     ...ACCESS_KEYWORDS,
     ...CONTROL_KEYWORDS,
     ...IMPORT_KEYWORDS,
-    ...ASYNC_KEYWORDS,
-    ...OSP_KEYWORDS,
     ...MISC_KEYWORDS,
     ...OPERATOR_KEYWORDS
   ];
