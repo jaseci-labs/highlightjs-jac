@@ -98,21 +98,25 @@ export default function(hljs) {
 
   // Declarative / misc keywords
   const MISC_KEYWORDS = [
-    'and',
     'by',
     'check',
     'glob',
     'global',
     'has',
-    'in',
-    'is',
     'lambda',
     'let',
     'nonlocal',
-    'not',
-    'or',
     'sem',
     'to'
+  ];
+
+  // Word-level operator keywords
+  const OPERATOR_KEYWORDS = [
+    'and',
+    'in',
+    'is',
+    'not',
+    'or'
   ];
 
   const RESERVED_WORDS = [
@@ -123,7 +127,8 @@ export default function(hljs) {
     ...IMPORT_KEYWORDS,
     ...ASYNC_KEYWORDS,
     ...OSP_KEYWORDS,
-    ...MISC_KEYWORDS
+    ...MISC_KEYWORDS,
+    ...OPERATOR_KEYWORDS
   ];
 
   // Built-in names and special references
@@ -237,7 +242,8 @@ export default function(hljs) {
     $pattern: /[A-Za-z_]\w*/,
     keyword: RESERVED_WORDS,
     built_in: BUILT_INS,
-    literal: LITERALS
+    literal: LITERALS,
+    operator: OPERATOR_KEYWORDS
   };
 
   // ── Strings ───────────────────────────────────────────────────────────────
