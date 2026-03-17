@@ -17,14 +17,14 @@ export default function(hljs) {
 
   // Archetype / declaration keywords
   const ARCHETYPE_KEYWORDS = [
-    'walker',
-    'node',
-    'edge',
-    'obj',
     'class',
+    'edge',
     'enum',
+    'impl',
+    'node',
+    'obj',
     'test',
-    'impl'
+    'walker'
   ];
 
   // Ability / function keywords
@@ -35,46 +35,46 @@ export default function(hljs) {
 
   // Access modifiers
   const ACCESS_KEYWORDS = [
-    'pub',
+    'abs',
+    'abstract',
+    'override',
     'priv',
     'protect',
-    'static',
-    'override',
-    'abs',
-    'abstract'
+    'pub',
+    'static'
   ];
 
   // Control-flow keywords
   const CONTROL_KEYWORDS = [
-    'if',
+    'as',
+    'assert',
+    'break',
+    'case',
+    'continue',
+    'default',
+    'del',
     'elif',
     'else',
-    'for',
-    'while',
-    'break',
-    'continue',
-    'pass',
-    'return',
-    'yield',
-    'raise',
-    'assert',
-    'del',
-    'try',
     'except',
     'finally',
-    'with',
-    'as',
+    'for',
+    'if',
     'match',
-    'case',
+    'pass',
+    'raise',
+    'return',
     'switch',
-    'default'
+    'try',
+    'while',
+    'with',
+    'yield'
   ];
 
   // Import keywords
   const IMPORT_KEYWORDS = [
+    'from',
     'import',
-    'include',
-    'from'
+    'include'
   ];
 
   // Async keywords
@@ -85,34 +85,34 @@ export default function(hljs) {
 
   // Jac Object-Spatial Programming keywords
   const OSP_KEYWORDS = [
-    'visit',
-    'revisit',
     'disengage',
-    'skip',
-    'report',
-    'spawn',
     'entry',
     'exit',
-    'ignore'
+    'ignore',
+    'report',
+    'revisit',
+    'skip',
+    'spawn',
+    'visit'
   ];
 
   // Declarative / misc keywords
   const MISC_KEYWORDS = [
-    'has',
+    'and',
+    'by',
+    'check',
     'glob',
     'global',
-    'nonlocal',
-    'sem',
-    'let',
-    'check',
-    'lambda',
+    'has',
     'in',
     'is',
-    'and',
-    'or',
+    'lambda',
+    'let',
+    'nonlocal',
     'not',
-    'to',
-    'by'
+    'or',
+    'sem',
+    'to'
   ];
 
   const RESERVED_WORDS = [
@@ -130,9 +130,12 @@ export default function(hljs) {
   const BUILT_INS = [
     '__import__',
     'abs',
+    'aiter',
     'all',
+    'anext',
     'any',
     'ascii',
+    'basestring',
     'bin',
     'bool',
     'breakpoint',
@@ -141,14 +144,21 @@ export default function(hljs) {
     'callable',
     'chr',
     'classmethod',
+    'cmp',
     'compile',
     'complex',
+    'copyright',
+    'credits',
     'delattr',
     'dict',
     'dir',
     'divmod',
     'enumerate',
     'eval',
+    'exec',
+    'execfile',
+    'exit',
+    'file',
     'filter',
     'float',
     'format',
@@ -157,16 +167,20 @@ export default function(hljs) {
     'globals',
     'hasattr',
     'hash',
+    'help',
     'hex',
     'id',
     'input',
     'int',
+    'intern',
     'isinstance',
     'issubclass',
     'iter',
     'len',
+    'license',
     'list',
     'locals',
+    'long',
     'map',
     'max',
     'memoryview',
@@ -179,7 +193,11 @@ export default function(hljs) {
     'pow',
     'print',
     'property',
+    'quit',
     'range',
+    'raw_input',
+    'reduce',
+    'reload',
     'repr',
     'reversed',
     'round',
@@ -192,25 +210,27 @@ export default function(hljs) {
     'super',
     'tuple',
     'type',
+    'unicode',
     'vars',
+    'xrange',
     'zip'
   ];
 
   const LITERALS = [
-    'True',
     'False',
-    'None'
+    'None',
+    'True'
   ];
 
   // Jac-specific language-level variable references
   const LANGUAGE_VARS = [
-    'self',
     'here',
-    'visitor',
-    'root',
-    'super',
     'init',
-    'postinit'
+    'postinit',
+    'root',
+    'self',
+    'super',
+    'visitor'
   ];
 
   const KEYWORDS = {
