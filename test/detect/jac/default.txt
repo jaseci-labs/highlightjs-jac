@@ -1,0 +1,18 @@
+walker Traverser {
+    can travel with `root entry {
+        visit [-->];
+    }
+    can travel with Person entry {
+        report here.name;
+        disengage;
+    }
+}
+
+node Person {
+    has name: str;
+    has age: int = 0;
+}
+
+edge Knows {
+    has since: int = 2020;
+}

@@ -1,0 +1,12 @@
+<span class="hljs-keyword">walker</span> <span class="hljs-title class_">Greeter</span> {
+    <span class="hljs-keyword">can</span> greet(name: <span class="hljs-built_in">str</span>) -&gt; <span class="hljs-built_in">str</span> {
+        :g: greeting = <span class="hljs-string">f&quot;Hello, <span class="hljs-subst">{name}</span>!&quot;</span>;
+        :g: raw = <span class="hljs-string">r&quot;raw\nstring&quot;</span>;
+        :g: multi = <span class="hljs-string">&quot;&quot;&quot;
+            triple quoted
+            string
+        &quot;&quot;&quot;</span>;
+        <span class="hljs-keyword">return</span> greeting;
+    }
+}
+

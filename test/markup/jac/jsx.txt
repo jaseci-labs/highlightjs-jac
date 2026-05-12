@@ -1,0 +1,10 @@
+walker UiWalker {
+    can render with node entry {
+        <>if = 1;
+        // jsx-like markup section
+        <Panel title="Hello" compact data-id='x1' user={here.name}>
+            <Button onClick={visitor.handle()} disabled />
+            <>fragment text</>
+        </Panel>
+    }
+}

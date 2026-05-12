@@ -1,0 +1,11 @@
+walker Greeter {
+    can greet(name: str) -> str {
+        :g: greeting = f"Hello, {name}!";
+        :g: raw = r"raw\nstring";
+        :g: multi = """
+            triple quoted
+            string
+        """;
+        return greeting;
+    }
+}

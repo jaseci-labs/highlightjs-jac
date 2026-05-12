@@ -80,7 +80,8 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist is intentionally committed for CDN usage — do not ignore it
+# dist
 
 # Gatsby files
 .cache/

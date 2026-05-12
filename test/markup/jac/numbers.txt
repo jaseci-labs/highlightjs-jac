@@ -1,0 +1,9 @@
+node Counter {
+    has count: int = 0;
+    has ratio: float = 3.14;
+    has big: int = 1_000_000;
+    has hex_val: int = 0xFF;
+    has bin_val: int = 0b1010;
+    has oct_val: int = 0o17;
+    has sci: float = 1.5e10;
+}

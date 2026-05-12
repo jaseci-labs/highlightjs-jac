@@ -1,0 +1,11 @@
+<span class="hljs-keyword">walker</span> <span class="hljs-title class_">UiWalker</span> {
+    <span class="hljs-keyword">can</span> render <span class="hljs-keyword">with</span> <span class="hljs-keyword">node</span> <span class="hljs-keyword">entry</span> {
+        &lt;&gt;<span class="hljs-keyword">if</span> = <span class="hljs-number">1</span>;
+        <span class="hljs-comment">// jsx-like markup section</span>
+        &lt;Panel title=<span class="hljs-string">&quot;Hello&quot;</span> compact data-<span class="hljs-built_in">id</span>=<span class="hljs-string">&#x27;x1&#x27;</span> user={here.name}<span class="hljs-tag">&gt;</span>
+            <span class="hljs-tag">&lt;Button</span> <span class="hljs-attr">onClick</span>={visitor.handle()} disabled <span class="hljs-tag">/&gt;</span>
+            <span class="hljs-operator">&lt;&gt;</span><span class="hljs-title">fragment</span> text<span class="hljs-tag">&lt;/&gt;</span>
+        <span class="hljs-tag">&lt;/Panel</span><span class="hljs-tag">&gt;</span>
+    }
+}
+
